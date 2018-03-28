@@ -44,13 +44,13 @@ All calculations can be found in the notebook \url{https://github.com/meredith-d
     
     \item From the Stefan-Boltzmann equation, the radius of the star is $5.59~\rsol$.
 
-    \item Using the relation $\mathrm{L}/\lsol = 1.5(\mathrm{M}/\msol)^{3.5}$, we find a mass of $15.65~\msol$.
+    \item Using the relation $\mathrm{L}/\lsol = 12(\mathrm{M}/\msol)^{2.9}$, we find a mass of $13.5~\msol$.
     
-    \item The surface gravity of the star is $1.37 \times 10^4$ cm s$^{-2}$ ($\log g = 4.13$), and the escape velocity is $1.03 \times 10^8$ cm s$^{-1}$.
+    \item The surface gravity of the star is $1.19 \times 10^4$ cm s$^{-2}$ ($\log g = 4.07$), and the escape velocity is $9.6 \times 10^7$ cm s$^{-1}$.
     
-    \item The mean density is $\rho = 0.12$ g cm$^{-3}$.
+    \item The mean density is $\rho = 0.11$ g cm$^{-3}$.
     
-    \item The surface gravity of $\tau$ Sco is about half that of the sun, whereas the escape velocity is about 1.67 times solar. $\tau$ Sco's mean density is only 0.09 of solar.
+    \item The surface gravity of $\tau$ Sco is about 0.43 of solar, whereas the escape velocity is about 1.55 times solar. $\tau$ Sco's mean density is only 0.08 of solar.
     
     \end{enumerate}
 
@@ -58,7 +58,7 @@ All calculations can be found in the notebook \url{https://github.com/meredith-d
 	% The virial theorem states that $-\Omega = 2U$.
 
 \item [4.3]
-    Based on the plot of solar temperature vs. density, it looks as though the sun is mostly in the ideal gas regime, and becomes degenerate at the highest densities.
+    Based on the plot of solar temperature vs. density, it looks as though the sun is largely within the ideal gas regime.
 	\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{temp_density.jpg}
@@ -67,9 +67,9 @@ All calculations can be found in the notebook \url{https://github.com/meredith-d
 \item [5.2]
 	\begin{enumerate}
 	
-    \item For a mean free path of $\ell = 1$ cm, it will take a photon about $5 \times 10^{21}$ scatterings to travel $1~\rsol$.
+    \item For a mean free path of $\ell = 1$ cm, it will take a photon $4.8 \times 10^{21}$ scatterings to travel $1~\rsol$.
     
-    \item The total path length $\ell N$ is $5 \times 10^{21}$ cm, or $6.9 \times 10^{10}~\rsol$. It will take a photon traveling this path $1.6 \times 10^{11}$ s to exit the sun, or a little over 5000 years.
+    \item The total path length $\ell N$ is $4.8 \times 10^{21}$ cm, or $6.9 \times 10^{10}~\rsol$. It will take a photon traveling this path $1.6 \times 10^{11}$ s to exit the sun, or a little over 5000 years.
     
     \item This is almost certainly not the same photon.
     
@@ -77,12 +77,26 @@ All calculations can be found in the notebook \url{https://github.com/meredith-d
 
 \item [6.2]
 	\begin{enumerate}
-    \item 
+    
+    \item Like a true observational astronomer, I fit a power law to three data points to find the high-mass ML relation, and found that the best-fit law is $L/\lsol = 106(M/\msol)^{2.07}$.
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{powerlaw.jpg}
+	\end{figure}
+    
+    \item For a mass-luminosity relation of the form $L = C_1M^{C_2}$, we can find $M_\mathrm{max}$ by substituting the mass-luminosity relation into equation 6.13:
+    \begin{align}
+    \frac{L_E}{\lsol} &= 3.8 \times 10^4 \frac{M}{\msol} \\
+    C_1M_\mathrm{max}^{C_2} &= 3.8 \times 10^4 \frac{M_\mathrm{max}}{\msol} \\
+    \frac{M_\mathrm{max}}{\msol} &= \left( \frac{3.8 \times 10^4}{C_1} \right)^{1/(C_2-1)}
+    \end{align}
+    For $C_1 = 106$ and $C_2 = 2.07$, we find $M_\mathrm{max} = 248~\msol$ and $L_\mathrm{max} = 9.43\times10^6~\lsol$.
+    
     \end{enumerate}
 
 \item [7.3]
 	\begin{enumerate}
-    \item The main sequence lifetime can be estimate by comparing the stellar luminosity to the total amount of energy that core fusion can produce. Assuming that all of the hydrogen in the convective core is converted to helium over the MS lifetime, and assuming a hydrogen fusion efficiency factor of 0.007, we can estimate the MS lifetime as $t_\mathrm{ms} = 0.007 M_\mathrm{core} c^2 / L_\star$. Assuming a convective core mass fraction of 0.25 for $4~\msol$ and 0.5 for $20~\msol$, we find MS lifetimes of $1.4 \times 10^{16}$ s and $8 \times 10^{14}$ s respectively, or $4.4 \times 10^{8}$ and $2.5 \times 10^{7}$ years.
+    \item The main sequence lifetime can be estimate by comparing the stellar luminosity to the total amount of energy that core fusion can produce. Assuming that all of the hydrogen in the convective core is converted to helium over the MS lifetime, and assuming a hydrogen fusion efficiency factor of 0.007, we can estimate the MS lifetime as $t_\mathrm{MS} = 0.007 M_\mathrm{core} c^2 / L_\star$. Assuming a convective core mass fraction of 0.25 for $4~\msol$ and 0.5 for $20~\msol$, we find MS lifetimes of $4.4 \times 10^{8}$ and $2.5 \times 10^{7}$ years respectively.
     
     \item According to Appendix D, the MS lifetimes of 4 and $20~\msol$ stars are $1.5 \times 10^8$ and $7.8 \times 10^6$ years respectively. Our derived lifetimes are slight overestimates.
     % logL_zams, log t, logL_tams for 4. solmass star: 2.37, 8.18, 2.61
