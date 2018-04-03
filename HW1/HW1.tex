@@ -31,8 +31,6 @@ Astro 531: Stellar Interiors\\
 
 All calculations can be found in the notebook \url{https://github.com/meredith-durbin/ASTR531/blob/master/HW1/HW1.ipynb}.
 
-% 2.3, 3.4, 4.3, 5.2, 6.2, and 7.3 
-
 \begin{enumerate}
 
 \item [2.3]
@@ -55,7 +53,12 @@ All calculations can be found in the notebook \url{https://github.com/meredith-d
     \end{enumerate}
 
 \item [3.4]
-	% The virial theorem states that $-\Omega = 2U$.
+	The virial theorem states that $K = -\frac{1}{2}U$. The potential energy of a star is on the order of $-GM^2/R$, and the kinetic energy is $\frac{3}{2}Nk_B\bar{T}$, where $N = M/\mu m_H$. 
+	\begin{align}
+	\frac{3}{2}\frac{M}{\mu m_H}k_B\bar{T} &= \frac{1}{2}\frac{GM^2}{R} \\
+	\bar{T} &= \frac{\mu m_H}{3k_B} \frac{GM}{R} \\
+	\bar{T} &\sim \frac{\mu m_H}{k_B} \frac{GM}{R}
+	\end{align}
 
 \item [4.3]
     Based on the plot of solar temperature vs. density, it looks as though the sun is largely within the ideal gas regime.
@@ -69,7 +72,7 @@ All calculations can be found in the notebook \url{https://github.com/meredith-d
 	
     \item For a mean free path of $\ell = 1$ cm, it will take a photon $4.8 \times 10^{21}$ scatterings to travel $1~\rsol$.
     
-    \item The total path length $\ell N$ is $4.8 \times 10^{21}$ cm, or $6.9 \times 10^{10}~\rsol$. It will take a photon traveling this path $1.6 \times 10^{11}$ s to exit the sun, or a little over 5000 years.
+    \item The total path length $\ell N$ is $4.8 \times 10^{21}$ cm, or $6.9 \times 10^{10}~\rsol$. It will take a photon traveling this path $1.6 \times 10^{11}$ s to exit the sun, or about 5116 years.
     
     \item This is almost certainly not the same photon.
     
