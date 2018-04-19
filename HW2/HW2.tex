@@ -42,8 +42,12 @@ All calculations can be found in the notebook \url{https://github.com/meredith-d
     
     \end{enumerate}
 
-\item [9.1] Timescales for various stars:
-
+\item [9.1] I used the following equations for timescales:
+	\begin{align}
+	\tau_\mathrm{dyn} &= \left(G \rho \right)^{-0.5} \\
+	\tau_\mathrm{KH} &= \frac{GM^2}{RL} \\
+	\tau_\mathrm{nucl} &= 10^{10} \left( \frac{M/\msol}{L/\lsol} \right) \mathrm{\ yr}
+	\end{align}
     \begin{table}[H]
     \centering
     \begin{tabular}{ r | c | c | c }
@@ -51,11 +55,11 @@ All calculations can be found in the notebook \url{https://github.com/meredith-d
       MS, $1~\msol$ & 0.906 h & $3.140\times10^7$ yr & $10^{10}$ yr  \\
       MS, $60~\msol$ & 6.792 h & $9.487\times10^3$ yr & $7.554\times10^{5}$ yr  \\
       RSG, $15~\msol$ & 5.056 yr & 4.793 yr & $3.358\times10^{5}$ yr   \\
-      WD, $0.6~\msol$ & 7.142 s & $7.945\times10^{10}$ yr & ---  \\
+      WD, $0.6~\msol$ & 7.142 s & $7.945\times10^{10}$ yr & $6\times10^{11}$ yr  \\
     \end{tabular}
     \end{table}
     
-    The fact that the red supergiant's thermal timescale is shorter than its dynamical timescale is concerning; I suspect that RSGs are weird enough that the timescale formulae begin to break down.
+    For the main sequence stars, these timescales give us an idea of the main-sequence lifetime and post-MS cooling time of the star. There are probably some very interesting consequences of these timescales for the red supergiant, given that its thermal and dynamical timescales are almost the same. For the white dwarf, we know that the nuclear timescale doesn't apply, as it isn't actually fusing anything.
 
 \item [9.2]
     If nuclear fusion in the sun were to suddenly stop, it would take approximately a thermal timescale to notice; the solar spectrum we observe is largely a product of temperature, and the thermal timescale is the timescale over which a change in temperature would become noticeable.
@@ -74,7 +78,13 @@ All calculations can be found in the notebook \url{https://github.com/meredith-d
 \item [12.2] % for 0.1, 1, 10, and 100Mo stars
 	\begin{enumerate}
     
-    \item All radii are in solar radii.
+    \item I used the following equations for radii:
+    \begin{align}
+    \frac{R_\mathrm{start,H}}{\rsol} &= 100 \left( \frac{M}{\msol} \right) \\
+    \frac{R_\mathrm{end,H}}{\rsol} &= \frac{R_\mathrm{start,H}}{50} \\
+    \frac{R_\mathrm{end,PMS}}{\rsol} &= \left( \frac{M}{\msol} \right)^{0.7}
+    \end{align}
+    
     	\begin{table}[H]
         \centering
         \begin{tabular}{ r | c | c | c }
@@ -87,7 +97,11 @@ All calculations can be found in the notebook \url{https://github.com/meredith-d
         \end{table}
 
 	\item 
-        Timescales:
+        I used the following equations for timescales:
+        \begin{align}
+        \tau_\mathrm{Hayashi} &= 10^6  \left( \frac{M}{\msol} \right)^{-1} \mathrm{\ yr} \\
+        \tau_\mathrm{PMS} &= 6 \times 10^7 \left( \frac{M}{\msol} \right)^{-2.5}  \mathrm{\ yr}
+        \end{align}
     	\begin{table}[H]
         \centering
         \begin{tabular}{ r | c | c }
