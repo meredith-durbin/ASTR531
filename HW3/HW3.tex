@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in, lmargin=0.75in]{geometry}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{astro}
+\usepackage{url}
+\usepackage[bottom]{footmisc}
+
+\newcommand\allbold[1]{{\boldmath\textbf{#1}}}
+\newcommand\pc{\mathrm{\ pc}}
+\newcommand\Lpc{\ L_\odot/\!\!\pc^2}
+\newcommand\sech{\ \!\mathrm{sech}}
+\newcommand\lsol{\mathrm{L}_\odot}
+\newcommand\rsol{\mathrm{R}_\odot}
+\newcommand\msol{\mathrm{M}_\odot}
+
+\begin{document}
+
+\begin{flushright}Meredith Durbin\\
+Emily Levesque\\
+Astro 531: Stellar Interiors\\
+\today\\
+
+\end{flushright}
+
+\center{\textsc{Homework 3}} \\[6pt]
+
+All calculations can be found in the notebook \url{https://github.com/meredith-durbin/ASTR531/blob/master/HW3/HW3.ipynb}.
+
+\begin{enumerate}
+
+\item [15.1]
+	\begin{enumerate}
+	
+    \item I found ratios of wind momentum to photon momentum of 0.35, 0.68, 1.16, and 1.47, in the same order as the table in the text.
+    
+    \item I found ratios of wind energy to photon energy of 0.002, 0.004, 0.008, and 0.01.
+    
+    \item I found ratios of thermal energy to photon energy of $1.89\times10^{-7}$, $3.48\times10^{-7}$, $5.97\times10^{-7}$, and $7.56\times10^{-7}$.
+    
+    \end{enumerate}
+
+\item [16.2] 
+	Between points D and F, the shell fusion is consuming the inner part of the envelope and depositing helium ash onto the core, thus removing mass from the envelope; thus, even if the region of convection increases in radius, there will be less mass overall available to it. As shell fusion occurs and the core contracts, the rest of the star expands due to the mirror effect, so the convective zone can simultaneously encompass a larger radius and less mass.
+
+\item [17.2]
+	\begin{enumerate}
+	
+    \item From eyeballing the diagram, I estimate that about $0.2~\msol$ undergoes helium fusion in the core. Assuming that all of that mass participates in fusion, this gives us a net energy release of $E_\mathrm{He} = 0.00065\times 2~\msol c^2 = 2.3\times10^{50}$ erg.
+    
+    \item I estimate that about $0.1~\msol$ undergoes hydrogen fusion in the shell. Assuming that all of that mass participates in fusion, this gives us a net energy release of $E_\mathrm{H} = 0.007\times 0.1~\msol c^2 = 1.25\times10^{51}$ erg.
+    
+    \item From these I find that 84\% of the energy is due to the H shell and 16\% is due to the He core fusion.
+    
+    \item Estimating a horizontal branch lifetime of $10^8$ years from the Kippenhahn diagram, I find a mean HB luminosity of $122.8~\lsol$. These aren't too far off from the actual luminosity and duration, $100~\lsol$ and 120 Myr.
+    
+    \end{enumerate}
+    
+\item [18.1]
+	\begin{enumerate}
+	
+    \item I estimate a mean He luminosity of $100~\lsol$.
+    
+    \item I estimate a mean H luminosity of $10^{3.5}~\lsol$.
+
+    \item The luminosity ratio is 32:1 H:He.
+
+    \item I find that the total mass that took part in He fusion is $0.026~\msol$, and the mass that took part in H fusion is $0.076~\msol$.
+
+    \end{enumerate}
+
+\end{enumerate}
+\end{document}
