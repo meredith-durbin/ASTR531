@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in, lmargin=0.75in]{geometry}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{astro}
+\usepackage{url}
+\usepackage[bottom]{footmisc}
+
+\newcommand\allbold[1]{{\boldmath\textbf{#1}}}
+\newcommand\pc{\mathrm{\ pc}}
+\newcommand\Lpc{\ L_\odot/\!\!\pc^2}
+\newcommand\sech{\ \!\mathrm{sech}}
+\newcommand\lsol{\mathrm{L}_\odot}
+\newcommand\rsol{\mathrm{R}_\odot}
+\newcommand\msol{\mathrm{M}_\odot}
+
+\begin{document}
+
+\begin{flushright}Meredith Durbin\\
+Emily Levesque\\
+Astro 531: Stellar Interiors\\
+\today\\
+
+\end{flushright}
+
+\center{\textsc{Homework 3}} \\[6pt]
+
+All calculations can be found in the notebook \url{https://github.com/meredith-durbin/ASTR531/blob/master/HW4/HW4.ipynb}.
+
+\begin{enumerate}
+
+\item [19.2]
+	\begin{enumerate}
+	
+    \item Assuming no stellar wind and that the change in envelope mass is entirely due to shell fusion, the total energy released should be $E = (M_\mathrm{end}-M_\mathrm{start})c^2$, and the timescale should be $E/L_\star$. This gives a timescale of about 4 Myr, which is about a thousand times too long.
+    
+    \item The winds of planetary nebulae have velocities consistent with a post-AGB wind.
+    
+    \item Assuming this time that the change in envelope mass is only due to mass loss, this time I get crossing times of $1.35\times10^6$, $1.35\times10^5$, and $1.35\times10^4$ years respectively.
+    
+    \end{enumerate}
+
+\item [20.2] 
+	\begin{enumerate}
+	
+    \item The luminosity of a white dwarf is dependent on mass, $\mu_\mathrm{ion}$, and cooling time. If we only vary $\mu_\mathrm{ion}$, then the ratio of luminosities is $(4/1)^{-7/5}$ for He vs. H, and $(6/1)^{-7/5}$ for C vs. H. This means that the He-rich white dwarf will be 0.14 times as bright as the H-rich one, and the C-rich one will be 0.08 times as bright.
+    
+    \item The luminosity of a WD is due to cooling, which is dependent on the thermal energy of the ions. Heavier ions have higher specific heat and thus less energy available for cooling.
+        
+    \end{enumerate}
+
+\item [21.3]
+	The RGB star would have the shorter fundamental period, as period is proportional to dynamical timescales and AGB stars have much longer dynamical timescales due to their lower density.
+    
+\item [23.1]
+	\begin{enumerate}
+	
+    \item The star is on the main sequence while it is fusing hydrogen in the core. The horizontal movement across the HRD happens on such a short timescale that it is barely visible in the diagram, between 12 and 12.4 Myr. The rest of the time is spent as a red supergiant, where it fuses hydrogen in a shell, and initially fuses helium in the core and then eventually moves to helium shell fusion and then core C-fusion.
+    
+    \item During hydrogen fusion, the star appears to lose a total of $0.2~\msol$ over a period of about 12.15 Myr, so the mass loss rate is $1.65\times10^{-8}~\msol$/year.
+    
+    During helium fusion, the star appears to lose a total of $2~\msol$ over a period of about 1.5 Myr, so the mass loss rate is $1.3\times10^{-6}~\msol$/year.
+
+    \item Our estimate of the main sequence mass loss is slightly lower than what is stated in the chapter 15 summary ($10^{-7}$ to $10^{-5}~\msol$/year). For the core He fusion phase, the Reimers relation predicts a mass loss rate of $1.1\times10^{-6}~\msol$/year assuming a log luminosity of $4.8~\lsol$ and radius of $665~\rsol$, which is almost spot on.
+
+    \end{enumerate}
+
+\end{enumerate}
+\end{document}
